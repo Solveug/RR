@@ -1,5 +1,4 @@
-
-puts "Текстовый квест \"Сказочное БУТОВО\""
+puts "Текстовый квест \"Сильно сказочное БУТОВО\""
 questions = [
   [0, "Вы вышли на развилку. Куда пойдете дальше?\n1.Налево\n2.Направо\n3.Вернуться домой", [101,102,103]],
   # ответы на первый вопрос
@@ -41,7 +40,7 @@ questions = [
   [1000, "Игра окончена\n1.Начать сначала?\n2.Exit", [0, :exit]]
 ]
 
-def Select_answer(questions, answer)
+def select_answer(questions, answer)
   exit if answer == :exit
   q1 = ""
   questions.each{|question| q1 = question if question[0] == answer}
@@ -49,14 +48,15 @@ def Select_answer(questions, answer)
   if q1[2].size == 1
     index = q1[2][0]
   else
-    print "Ваш выбор: "
-    user_choise = gets.chomp.to_i
+    while index.nil? do
+      print "Ваш выбор: "
+      user_choise = gets.chomp.to_i
       index = q1[2][user_choise - 1]
+      index = nil if user_choise == 0
+      # break if !index.nil?
+    end
   end
   puts "_______________________________"
-
-  Select_answer(questions,index)
-
+  select_answer(questions,index)
 end
-
-puts Select_answer(questions,0)
+puts select_answer(questions,0)
