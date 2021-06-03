@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def count_letters(word)
   vovels = word.delete('^а, о, э, е, и, ы, у, ё, ю, я').size
   consonants = word.size - vovels
