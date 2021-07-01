@@ -1,15 +1,18 @@
+# frozen_string_literal: true
+
 require 'open-uri'
-require "json"
-require "date"
+require 'json'
+require 'date'
 
 class Work_calendar
   attr_reader :holidays, :preholidays
+
   def initialize(current_year)
     url = 'https://raw.githubusercontent.com/d10xa/holidays-calendar/master/json/calendar.json'
     page = URI.open(url)
     text = JSON.parse(page.read)
-    @holidays = text["holidays"].find_all{|day| day.include?(current_year)}
-    @preholidays = text["preholidays"].find_all{|day| day.include?(current_year)}
+    @holidays = text['holidays'].find_all { |day| day.include?(current_year) }
+    @preholidays = text['preholidays'].find_all { |day| day.include?(current_year) }
   end
 
   def weekend?
@@ -25,21 +28,25 @@ class Work_calendar
   end
 
   def current_day
-    Time.now.strftime("%Y-%m-%d")
+    Time.now.strftime('%Y-%m-%d')
   end
 
   def to_s
-    "Список выходных и праздничных дней:\n#{@holidays.map{|day| Date.parse(day).strftime("%d %b").downcase}.join(",")},\nCписок предпраздничных дней:\n#{@preholidays.map{|day| Date.parse(day).strftime("%d %b").downcase}.join(",")}"
+    "Список выходных и праздничных дней:\n#{@holidays.map do |day|
+                                              Date.parse(day).strftime('%d %b').downcase
+                                            end.join(',')},\nCписок предпраздничных дней:\n#{@preholidays.map do |day|
+                                                                                               Date.parse(day).strftime('%d %b').downcase
+                                                                                             end.join(',')}"
   end
 end
 
-puts "Введите год"
-year = STDIN.gets.chomp
+puts 'Введите год'
+year = $stdin.gets.chomp
 work_calendar_2021 = Work_calendar.new(year)
 print work_calendar_2021
 puts
 print "\nСегодня: #{work_calendar_2021.current_day} - "
 
-puts "Выходной" if work_calendar_2021.holiday?
-puts "Предпраздничный" if work_calendar_2021.preholiday?
-puts "Не выходной" unless work_calendar_2021.holiday?
+puts 'Выходной' if work_calendar_2021.holiday?
+puts 'Предпраздничный' if work_calendar_2021.preholiday?
+puts 'Не выходной' unless work_calendar_2021.holiday?
