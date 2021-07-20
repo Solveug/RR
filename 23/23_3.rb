@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def method
   c = 3
   puts "Переменная '$a': #{defined?($a)}"

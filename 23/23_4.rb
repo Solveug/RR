@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 variable = 1
 
 class MyClass
@@ -6,7 +8,7 @@ class MyClass
   end
 
   def check_variables
-    puts "В классе:"
+    puts 'В классе:'
     puts "Переменная 'variable': #{defined?(variable)}"
     puts "Переменная '@variable': #{defined?(@variable)}"
   end
@@ -15,6 +17,6 @@ end
 first = MyClass.new
 first.check_variables
 
-puts "Вне класса:"
+puts 'Вне класса:'
 puts "Переменная 'variable': #{defined?(variable)}"
 puts "Переменная '@variable': #{defined?(@variable)}"
