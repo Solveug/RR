@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+  <question seconds="10" points="2">
+    <text>Сколько грамм в литре?</text>
+    <variants>
+      <variant>1000</variant>
+      <variant>0,5</variant>
+      <variant right="true">0</variant>
+      <variant>875</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="2">
+    <text>Сколько метров в километре?</text>
+    <variants>
+      <variant>10000</variant>
+      <variant>100</variant>
+      <variant>1024</variant>
+      <variant right="true">1000</variant>
+    </variants>
+  </question>
+  <question seconds="15" points="1">
+    <text>Сколько битов в байте?</text>
+    <variants>
+      <variant right="true">8</variant>
+      <variant>1024</variant>
+      <variant>4096</variant>
+      <variant>2048</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="2">
+    <text>Сколько сантиметров в дециметре?</text>
+    <variants>
+      <variant>100</variant>
+      <variant right="true">10</variant>
+      <variant>1000</variant>
+      <variant>1024</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="1">
+    <text>Сколько дней в неделе?</text>
+    <variants>
+      <variant>31</variant>
+      <variant right="true">7</variant>
+      <variant>28</variant>
+      <variant>30</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="2">
+    <text>Сколько лет герою романа 'Пятнадцатилетний капитан'?</text>
+    <variants>
+      <variant>14,5</variant>
+      <variant>25</variant>
+      <variant>13</variant>
+      <variant right="true">15</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="2">
+    <text>Сколько килограмм весит тонна ваты?</text>
+    <variants>
+      <variant right="true">1000</variant>
+      <variant>999</variant>
+      <variant>1024</variant>
+      <variant>10000</variant>
+    </variants>
+  </question>
+  <question seconds="15" points="5">
+    <text>На дубе три ветки, на каждой ветке по три яблока, сколько всего яблок?</text>
+    <variants>
+      <variant>9</variant>
+      <variant right="true">0</variant>
+      <variant>6</variant>
+      <variant>3</variant>
+    </variants>
+  </question>
+  <question seconds="15" points="3">
+    <text>Сколько букв в слове 'Параллелепипед'?</text>
+    <variants>
+      <variant>0</variant>
+      <variant right="true">14</variant>
+      <variant>13</variant>
+      <variant>15</variant>
+    </variants>
+  </question>
+</questions>
