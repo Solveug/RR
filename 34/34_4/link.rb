@@ -1,4 +1,5 @@
-# encoding: utf-8
+# frozen_string_literal: true
+
 #
 # Класс «Ссылка», разновидность базового класса «Запись»
 class Link < Post
@@ -10,10 +11,10 @@ class Link < Post
 
   def read_from_console
     puts 'Адрес ссылки (url):'
-    @url = STDIN.gets.chomp
+    @url = $stdin.gets.chomp
 
     puts 'Что за ссылка?'
-    @text = STDIN.gets.chomp
+    @text = $stdin.gets.chomp
   end
 
   def to_strings

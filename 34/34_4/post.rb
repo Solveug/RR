@@ -1,14 +1,14 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
 require 'sqlite3'
 
 # Базовый класс «Запись» — здесь мы определим основные методы и свойства,
 # общие для всех типов записей.
 class Post
-  SQLITE_DB_FILE = 'notepad.sqlite'.freeze
+  SQLITE_DB_FILE = 'notepad.sqlite'
 
   def self.post_types
-    {'Memo' => Memo, 'Task' => Task, 'Link' => Link}
+    { 'Memo' => Memo, 'Task' => Task, 'Link' => Link }
   end
 
   def self.create(type)
@@ -118,9 +118,7 @@ class Post
     # например, если в базе нет таблицы posts.
     begin
       db.execute(
-        'INSERT INTO posts (' +
-        post_hash.keys.join(', ') +
-        ") VALUES (#{('?,' * post_hash.size).chomp(',')})",
+        "INSERT INTO posts (#{post_hash.keys.join(', ')}) VALUES (#{('?,' * post_hash.size).chomp(',')})",
         post_hash.values
       )
     rescue SQLite3::SQLException => e

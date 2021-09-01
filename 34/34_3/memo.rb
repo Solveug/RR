@@ -1,4 +1,5 @@
-# encoding: utf-8
+# frozen_string_literal: true
+
 #
 # Класс «Заметка», разновидность базового класса «Запись»
 class Memo < Post
@@ -8,7 +9,7 @@ class Memo < Post
     line = nil
 
     until line == 'end'
-      line = STDIN.gets.chomp
+      line = $stdin.gets.chomp
       @text << line
     end
 

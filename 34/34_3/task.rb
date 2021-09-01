@@ -1,4 +1,5 @@
-# encoding: utf-8
+# frozen_string_literal: true
+
 #
 # Подключим встроенный в руби класс Date для работы с датами
 require 'date'
@@ -13,11 +14,11 @@ class Task < Post
 
   def read_from_console
     puts 'Что надо сделать?'
-    @text = STDIN.gets.chomp
+    @text = $stdin.gets.chomp
 
     puts 'К какому числу? Укажите дату в формате ДД.ММ.ГГГГ, ' \
       'например 12.05.2003'
-    input = STDIN.gets.chomp
+    input = $stdin.gets.chomp
 
     @due_date = Date.parse(input)
   end
