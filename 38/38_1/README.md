@@ -1,24 +1,11 @@
-# README
+### Первое Rails-приложение в рамках курса Goodprogrammer.ru
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+На главной странице расположены цитата/девиз и её автор, картинка, иллюстрирующая цитату.
+Так же добавила кнопки со ссылками на Вики.
 
-Things you may want to cover:
+Для оформления страницы использовала **Bootstrap**.
 
-* Ruby version
+[Задеплоила своё первое rails-приложение на heroku:](https://enigmatic-sea-28993.herokuapp.com/)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Если ссылка сгорит, есть скрин приложения в корневой папке проекта
+![Alt-текст](https://github.com/Solveug/RR/blob/master/38/screen.png "Скрин")
