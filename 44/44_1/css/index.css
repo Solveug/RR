@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
+}
+.wrapper {
+  width: 600px;
+}
+.message {
+  border: 2px solid #A9A9A9;
+  border-radius: 10px;
+  color: white;
+  margin: 1em;
+  padding: 20px;
+}
+.message-notice {
+  border-color: #006400;
+  background-color: #228B22;
+}
+.message-error {
+  border-color: #DC143C;
+  background-color: #CD5C5C;
+}
