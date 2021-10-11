@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fogging, .bubbles {
+  height: 300px;
+  width: 500px;
+}
+
+.bubbles {
+  background-image: url('bubbles.jpg');
+  background-size: cover;
+}
+
+.fogging {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
