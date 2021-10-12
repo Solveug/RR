@@ -6,42 +6,40 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 80vw;
   margin: auto;
   font-family: Arial;
   font-size: 120%;
-  background-color: blue;
+  width: 80vw;
 }
 
 header {
-  padding: 20px;
-  text-align: center;
   background-color: lightblue;
+  text-align: center;
 }
 
 footer {
-  flex-shrink: 0;
-  padding: 20px;
-  text-align: center;
   background-color: lightcoral;
-}
-
-.container {
-  flex: 1 0 auto;
-  background-color: #FFFFCC;
-  overflow: auto;
-}
-
-.first {
-  width: 60%;
-}
-
-.second {
-  width: 40%;
+  flex-shrink: 0;
+  text-align: center;
 }
 
 .column {
   box-sizing: border-box;
   float: left;
   padding: 10px;
+}
+
+.container {
+  flex: 1 0 auto;
+  overflow: auto;
+}
+
+.first {
+  background-color: lightgreen;
+  width: 60%;
+}
+
+.second {
+  background-color: lightgray;
+  width: 40%;
 }
