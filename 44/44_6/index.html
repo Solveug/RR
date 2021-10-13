@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="fares.css">
   <link rel="stylesheet" href="action.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="review.css">
+  <link rel="stylesheet" href="contacts.css">
 </head>
 
 <body>
@@ -28,6 +30,9 @@
           </li>
           <li class="header-nav-item">
           <a class="header-nav-link" href="#team">Команда</a>
+          </li>
+          <li class="header-nav-item">
+          <a class="header-nav-link" href="#reviews">Отзывы</a>
           </li>
           <li class="header-nav-item">
           <a class="header-nav-link" href="#prices">Цены</a>
@@ -59,7 +64,7 @@
       <div class="column-1-4">
         <div class="features-item">
           <div class="features-icon">
-            <img class="features-icon-position" src="icons/1077062.png" alt="[Люди]">
+            <img class="features-icon-position" src="icons/1.png" alt="[Люди]">
           </div>
           <p class="title-medium">1&nbsp;000<br>человек</p>
           <p class="text-lead">Уже отправились с нами в путешествие</p>
@@ -69,7 +74,7 @@
       <div class="column-1-4">
         <div class="features-item">
           <div class="features-icon">
-            <img class="features-icon-position" src="icons/1077074.png" alt="[Сеть]">
+            <img class="features-icon-position" src="icons/2.png" alt="[Сеть]">
           </div>
           <p class="title-medium">99,9% рекомендуют</p>
           <p class="text-lead">Нас своим друзьям и близким</p>
@@ -79,7 +84,7 @@
       <div class="column-1-4">
         <div class="features-item">
           <div class="features-icon">
-            <img class="features-icon-position" src="icons/1077066.png" alt="[Сообщение]">
+            <img class="features-icon-position" src="icons/3.png" alt="[Сообщение]">
           </div>
           <p class="title-medium">Живое общение</p>
           <p class="text-lead">Все наши путешественники поддерживают дружеские отношения</p>
@@ -89,7 +94,7 @@
       <div class="column-1-4">
         <div class="features-item">
           <div class="features-icon">
-            <img class="features-icon-position" src="icons/415902.png" alt="[Безопасность]">
+            <img class="features-icon-position" src="icons/4.png" alt="[Безопасность]">
           </div>
           <p class="title-medium">100% гарантия</p>
           <p class="text-lead">Безопасность на высочайшем уровне</p>
@@ -101,8 +106,8 @@
   <div class="team" id="team">
     <div class="container">
       <div class="text-center">
-        <h2 class="title-small">Мы гордимся нашей командой</h2>
-        <p class="text-lead">Ну, что у нас плохого?<br>У нас хорошее, мы Склисса нашли.<br>А она, то есть он, в корабль не влезет.</p>
+        <h2 class="title-small">Наши пилоты</h2>
+        <p class="text-lead">Ну, что у нас плохого? У нас хорошее, мы Склисса нашли. А она, то есть он, в корабль не влезет.</p>
       </div>
       <div class="team-members">
         <div class="column-1-2 buffer-top">
@@ -147,6 +152,43 @@
       </div>
     </div>
   </div>
+
+  <div class="reviews" id="reviews">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="title-small">Отзывы о нас</h2>
+          <div class="customer-reviews">
+            <div class="column-1-2 buffer-top">
+              <div class="customer-review">
+                <div class="customer-image">
+                  <img class="customer-photo" src="customer/rogozin.png" alt="[Рогозин]">
+                </div>
+                <div class="customer-details">
+                  <h3 class="title-small">Дмитрий Рогозин</h3>
+                  <small class="text-small">Глава «Роскосмоса»</small>
+                  <p class="text-medium">На каждом авиазаводе у нас трудятся специальные коты, чтоб ни одна американская мышь не прошмыгнула</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-1-2 buffer-top">
+              <div class="customer-review">
+                <div class="customer-image">
+                  <img class="customer-photo" src="customer/ilon.png" alt="[Маск]">
+                </div>
+                <div class="customer-details">
+                  <h3 class="title-small">Илон Маск</h3>
+                  <small class="text-small">Основатель компании Paypal, основатель компании SpaceX; генеральный директор компании Tesla</small>
+                  <p class="text-medium">Если что-то не терпит неудачу, вы недостаточно инновационно подходите к делу</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div class="prices text-center" id="prices">
     <div class="container buffer-both-large">
@@ -201,7 +243,7 @@
           </div>
           <div class="fare-footer">
             <div class="fare-order">
-              <a class="button button-blue" href="#">Купить билеты</a>
+              <a class="button button-green" href="#">Купить билеты</a>
             </div>
           </div>
         </div>
@@ -233,19 +275,29 @@
   </div>
 
   <div class="action text-center" id="buy">
-  <div class="container">
-    <div class="column-1-2">
-      <div class="action-image-div">
-        <img class="action-image" src="footer.png" alt="[Космонавт]" />
-      </div>
-    </div>
-    <div class="column-1-2">
-      <div class="action-details">
-        <p class="title-medium">Подарите себе и близким незабываемые впечатления!</p>
-        <div class="buffer-both">
-          <a class="button button-green" href="#">Купить билеты</a>
+    <div class="container">
+      <div class="column-1-3">
+        <div class="action-details">
+          <p class="title-medium">Подарите себе незабываемые впечатления!</p>
+          <div class="buffer-both">
+            <a class="button button-green" href="#">Купить билеты</a>
+          </div>
         </div>
       </div>
+      <div class="column-1-3">
+        <div class="action-image-div">
+          <img class="action-image" src="footer.png" alt="[Космонавт]" />
+        </div>
+      </div>
+      <div class="column-1-3">
+        <div class="contacts">
+          <p class="title-medium">Контакты</p>
+          <p class="text-small">г. Москва</p>
+          <p class="text-small">Красная площадь</p>
+          <p class="text-small">+7 (900) 000-00-00</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>

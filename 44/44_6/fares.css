@@ -3,7 +3,7 @@
 }
 
 .fare, .fare-head, .fare-footer {
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .fare-head, .fare-footer {
@@ -35,7 +35,7 @@
 }
 
 .fare_featured {
-  background: #59a3fc;
+  background: #47A76A;
   border-color: #307edc;
 }
 
@@ -50,6 +50,6 @@
 
 .fare_featured .fare-footer,
 .fare_featured .fare-head {
-  background: #3b89ec;
-  border-color: #307edc;
+  background: #00693E;
+  border-color: #00693E;
 }

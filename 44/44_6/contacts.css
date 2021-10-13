@@ -1,0 +1,12 @@
+.contacts {
+  margin-left: 80px;
+  text-align: left;
+}
+
+.contacts .title-small {
+  padding-bottom: 30px;
+}
+
+.contacts .text-small {
+  padding-bottom: 20px;
+}
