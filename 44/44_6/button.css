@@ -13,6 +13,12 @@
   color: #fff;
 }
 
+.button-green:hover {
+  background: #006400;
+  transition: all ease .3s;
+  cursor: pointer;
+}
+
 .button-blue {
   background: #1E90FF;
   color: #fff;
@@ -21,4 +27,10 @@
 .button-gray {
   background: #aaa;
   color: #fff;
+}
+
+.button-gray:hover {
+  background: #708090;
+  transition: all ease .3s;
+  cursor: pointer;
 }

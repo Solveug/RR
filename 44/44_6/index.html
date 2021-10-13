@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="review.css">
   <link rel="stylesheet" href="contacts.css">
+  <script type="text/javascript" charset="utf-8" src="header.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./parallax.js-1.5.0/parallax.min.js"></script>
 </head>
 
 <body>
@@ -45,7 +48,7 @@
     </div>
   </div>
 
-  <div class="intro text-center" id="intro">
+  <div class="intro text-center" id="intro" data-parallax="scroll" data-image-src="header.jpg">
     <img class="intro-logo" src="logo.png" alt="[Лого]">
 
     <h1 class="title-large">Путешествие на Марс</h1>
@@ -161,12 +164,12 @@
             <div class="column-1-2 buffer-top">
               <div class="customer-review">
                 <div class="customer-image">
-                  <img class="customer-photo" src="customer/rogozin.png" alt="[Рогозин]">
+                  <img class="customer-photo negativ" src="customer/rogozin.png" alt="[Рогозин]">
                 </div>
                 <div class="customer-details">
                   <h3 class="title-small">Дмитрий Рогозин</h3>
-                  <small class="text-small">Глава «Роскосмоса»</small>
-                  <p class="text-medium">На каждом авиазаводе у нас трудятся специальные коты, чтоб ни одна американская мышь не прошмыгнула</p>
+                  <small class="text-small customer-moto">Глава «Роскосмоса»</small>
+                  <p class="text-medium customer-about">Российские дипломаты получают специальный словарь для общения с НАТО. Оказывается «твою мать» пишется раздельно</p>
                 </div>
               </div>
             </div>
@@ -174,12 +177,12 @@
             <div class="column-1-2 buffer-top">
               <div class="customer-review">
                 <div class="customer-image">
-                  <img class="customer-photo" src="customer/ilon.png" alt="[Маск]">
+                  <img class="customer-photo pozitiv" src="customer/ilon.png" alt="[Маск]">
                 </div>
                 <div class="customer-details">
-                  <h3 class="title-small">Илон Маск</h3>
-                  <small class="text-small">Основатель компании Paypal, основатель компании SpaceX; генеральный директор компании Tesla</small>
-                  <p class="text-medium">Если что-то не терпит неудачу, вы недостаточно инновационно подходите к делу</p>
+                  <h3 class="title-small ">Илон Маск</h3>
+                  <small class="text-small customer-moto">Основатель компании Paypal, основатель компании SpaceX; генеральный директор компании Tesla</small>
+                  <p class="text-medium customer-about">Если что-то не терпит неудачу, вы недостаточно инновационно подходите к делу</p>
                 </div>
               </div>
             </div>
@@ -274,7 +277,7 @@
     </div>
   </div>
 
-  <div class="action text-center" id="buy">
+  <div class="action text-center" id="buy" data-parallax="scroll" data-image-src="footer.jpg">
     <div class="container">
       <div class="column-1-3">
         <div class="action-details">
@@ -302,3 +305,5 @@
   </div>
 </body>
 </html>
+
+
