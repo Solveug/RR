@@ -15,6 +15,13 @@ class User < ApplicationRecord
 
   validates_confirmation_of :password
 
+  EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/i
+  validates :email, format: { with: EMAIL_REGEX }
+
+  USERNAME_REGEX = /\A[\w\d\_]+\z/i
+  validates :username, length: { maximum: 40 }, uniqueness: { case_sensitive: false }, format: { with: USERNAME_REGEX }
+  before_save { self.username.downcase! }
+
   before_save :encrypt_password
 
   def encrypt_password
